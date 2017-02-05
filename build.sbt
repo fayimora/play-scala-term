@@ -1,8 +1,10 @@
+import org.irundaia.sbt.sass._
+
 name := """play-scala-term"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 
 scalaVersion := "2.11.7"
 
@@ -16,3 +18,10 @@ libraryDependencies ++= Seq(
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
 )
 
+pipelineStages := Seq(digest)
+
+SassKeys.cssStyle := Minified
+
+SassKeys.generateSourceMaps := false
+
+SassKeys.syntaxDetection := ForceScss
