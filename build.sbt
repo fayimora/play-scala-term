@@ -12,6 +12,7 @@ libraryDependencies ++= Seq(
   ws,
   "org.webjars" %% "webjars-play" % "2.5.0-4",
   "org.webjars.npm" % "materialize-css" % "0.97.8",
+  "org.webjars" % "material-design-icons" % "3.0.1",
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
 )
 
