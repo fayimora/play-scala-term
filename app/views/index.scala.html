@@ -1,0 +1,12 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)(implicit webJarAssets: WebJarAssets)
+
+@main(title = "Index") {
+    <h1>Here is the index page!</h1>
+
+    <p>The message is: @message</p>
+
+}
