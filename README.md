@@ -1,3 +1,5 @@
+Nothing to see here, just my testbed for playframework!
+
 This is your new Play application
 =================================
 
